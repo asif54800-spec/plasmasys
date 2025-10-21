@@ -55,6 +55,8 @@
 The easiest way to install on Arch Linux is from the AUR using a helper like `yay` or `paru`:
 
 ```bash
+
+AUR: https://aur.archlinux.org/packages/plasmasys
 yay -S plasmasys
 
 (This link will work once your package is approved on the AUR)
