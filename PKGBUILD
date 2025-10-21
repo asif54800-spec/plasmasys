@@ -5,12 +5,12 @@ pkgrel=1
 pkgdesc="A simple Python sensor monitor for the KDE Plasma 6 desktop."
 arch=('any')
 url="https://github.com/asif54800-spec/plasmasys"
-license=('GPL3')
+license=('MIT')
 depends=('python' 'python-pyqt6' 'python-psutil')
 makedepends=('git' 'python-setuptools' 'python-wheel')
 optdepends=('wireless_tools: for displaying Wi-Fi SSID')
 source=("git+$url.git#tag=v$pkgver")
-sha256sums=('8b727315dce52fec5745f520f0ebe04d042bbdc4b3c678d405885f05e9581dce')
+sha256sums=('SKIP')
 
 package() {
     cd "$srcdir/$pkgname"
