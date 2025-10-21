@@ -9,9 +9,10 @@ license=('MIT')
 depends=('python-pyqt6' 'python-psutil')
 optdepends=('wireless_tools: for displaying Wi-Fi SSID')
 
+# This downloads from your NEW v1.1 tag
 source=("$pkgname-$pkgver.tar.gz::https://github.com/asif54800-spec/plasmasys/archive/refs/tags/v$pkgver.tar.gz")
 
-# This checksum is for the file we proved is correct
+# Leave this empty. We will fill it.
 sha256sums=('b2505b2bc866605741bcfb944267a644872ce7c8a29b5d4a17b120124c9ce84e')
 
 # This function is the critical fix
@@ -20,7 +21,7 @@ prepare() {
 }
 
 package() {
-    # This will now work, because prepare() moved us into the right folder
+    # This will now work
     install -Dm755 "plasmasys.py" "$pkgdir/usr/bin/$pkgname"
     install -Dm644 "plasmasys.desktop" "$pkgdir/usr/share/applications/plasmasys.desktop"
     install -Dm644 "plasmasys.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/plasmasys.svg"
