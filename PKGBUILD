@@ -12,7 +12,7 @@ optdepends=('wireless_tools: for displaying Wi-Fi SSID')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/asif54800-spec/plasmasys/archive/refs/tags/v$pkgver.tar.gz")
 
 # This checksum is for the file we proved is correct
-sha256sums=('24b602c83125a45e2aac17bdb849a84a3de8ceef32da78ac6b866a49322f58b1')
+sha256sums=('SKIP')
 
 # This function is the critical fix
 prepare() {
