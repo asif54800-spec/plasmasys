@@ -1,25 +1,3 @@
-# Maintainer: Muhammad Asif Rauf <asif54800@gmail.com>
-pkgname=plasmasys
-pkgver=1.0
-pkgrel=1
-pkgdesc="A simple Python sensor monitor for the KDE Plasma 6 desktop."
-arch=('any')
-url="https://github.com/asif54800-spec/plasmasys"
-license=('MIT')
-
-source=("git+$url.git#tag=v$pkgver")
-sha256sums=('SKIP')
-
-package() {
-    cd "$srcdir/$pkgname"
-    install -Dm755 "PlasmaSys.py" "$pkgdir/usr/bin/plasmasys"
-    install -Dm644 "PlasmaSys.desktop" "$pkgdir/usr/share/applications/plasmasys.desktop"
-    install -Dm644 "PlasmaSys.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/plasmasys.svg"
-    install -Dm644 "PlasmaSys.svg" "$pkgdir/usr/share/icons/plasmasys.svg"
-}
-
-
-
 # Maintainer: Muhammad Asif Rauf <your_email@example.com>
 pkgname=plasmasys
 pkgver=1.0
