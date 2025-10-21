@@ -12,7 +12,7 @@ depends=('python-pyqt6' 'python-psutil')
 optdepends=('wireless_tools: for displaying Wi-Fi SSID')
 
 source=("$pkgname-$pkgver.tar.gz::https://github.com/asif54800-spec/plasmasys/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('9ae628bf01f370958f49744d7d912a2ccacfde9c045bbef38e4abc1bdaaa674d')
+sha256sums=('5738fe54dbb9a637e146e6dc1167d3b89e185837205fb0d495548260c7fdfdd7')
 
 prepare() {
     cd "$pkgname-$pkgver"
