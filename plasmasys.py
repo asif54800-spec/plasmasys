@@ -344,7 +344,7 @@ class SensorMonitor(QWidget):
         dlg=SettingsDialog(self.settings,self)
         if dlg.exec(): self.settings=load_settings()
     def show_about(self):
-        QMessageBox.information(self,"About","PlasmaSys — Sensor Monitor\nDeveloper: Muhammad Asif Rauf\nVersion: 1.4 (KDE6 Compatible)")
+        QMessageBox.information(self,"About","PlasmaSys — Sensor Monitor\nDeveloper: Muhammad Asif Rauf\nVersion: 1.0 (KDE6 Compatible)")
     def quit_app(self): self.tray.hide(); QApplication.quit()
 
     # 🔔 Confirmation when closing window
