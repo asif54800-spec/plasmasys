@@ -1,28 +1,22 @@
-# Maintainer: Muhammad Asif Rauf <asif54800@gmail.com>
+# Maintainer: Muhammad Asif Rauf <your_email@example.com>
 pkgname=plasmasys
 pkgver=1.0
 pkgrel=1
 pkgdesc="A simple Python sensor monitor for the KDE Plasma 6 desktop."
 arch=('any')
 url="https://github.com/asif54800-spec/plasmasys"
-license=('MIT')
-depends=('python-pyqt6' 'python-psutil')
+license=('GPL3')
+depends=('python' 'python-pyqt6' 'python-psutil')
+makedepends=('git' 'python-setuptools' 'python-wheel')
 optdepends=('wireless_tools: for displaying Wi-Fi SSID')
-
-# This downloads from your NEW v1.1 tag
-source=("$pkgname-$pkgver.tar.gz::https://github.com/asif54800-spec/plasmasys/archive/refs/tags/v$pkgver.tar.gz")
-
-# Leave this empty. We will fill it.
+source=("git+$url.git#tag=v$pkgver")
 sha256sums=('SKIP')
 
-# This function is the critical fix
-prepare() {
-    cd "$pkgname-$pkgver"
+package() {
+    cd "$srcdir/$pkgname"
+    install -Dm755 "PlasmaSys.py" "$pkgdir/usr/bin/plasmasys"
+    install -Dm644 "PlasmaSys.desktop" "$pkgdir/usr/share/applications/plasmasys.desktop"
+    install -Dm644 "PlasmaSys.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/plasmasys.svg"
+    install -Dm644 "PlasmaSys.svg" "$pkgdir/usr/share/icons/plasmasys.svg"
 }
 
-package() {
-    # This will now work
-    install -Dm755 "plasmasys.py" "$pkgdir/usr/bin/$pkgname"
-    install -Dm644 "plasmasys.desktop" "$pkgdir/usr/share/applications/plasmasys.desktop"
-    install -Dm644 "plasmasys.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/plasmasys.svg"
-}
