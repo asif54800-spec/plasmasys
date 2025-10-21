@@ -13,7 +13,7 @@ optdepends=('wireless_tools: for displaying Wi-Fi SSID')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/asif54800-spec/plasmasys/archive/refs/tags/v$pkgver.tar.gz")
 
 # This checksum is probably wrong now, we will fix it in the next step
-sha256sums=('5738fe54dbb9a637e146e6dc1167d3b89e185837205fb0d495548260c7fdfdd7')
+sha256sums=('fd189a283ad307ccb3e4a26d032f5ff7226d34f0a19591726c554976fb5a533f')
 
 # THIS IS THE FIX:
 # This function runs after extracting and moves into the correct folder.
