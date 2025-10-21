@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=PlasmaSys
+Comment=Monitor your system's CPU, RAM, disk, temps, and network speeds.
+Exec=plasmasys
+Icon=plasmasys
+Type=Application
+Categories=System;Monitor;
+StartupWMClass=python3
