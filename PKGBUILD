@@ -1,4 +1,4 @@
-# Maintainer: Muhammad Asif Rauf <your_email@example.com>
+# Maintainer: Muhammad Asif Rauf <asif54800@gmail.com>
 pkgname=plasmasys
 pkgver=1.0
 pkgrel=1
