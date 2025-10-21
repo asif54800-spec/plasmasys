@@ -10,7 +10,7 @@ depends=('python' 'python-pyqt6' 'python-psutil')
 makedepends=('git' 'python-setuptools' 'python-wheel')
 optdepends=('wireless_tools: for displaying Wi-Fi SSID')
 source=("git+$url.git#tag=v$pkgver")
-sha256sums=('SKIP')
+sha256sums=('8b727315dce52fec5745f520f0ebe04d042bbdc4b3c678d405885f05e9581dce')
 
 package() {
     cd "$srcdir/$pkgname"
